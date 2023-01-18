@@ -1,0 +1,166 @@
+.homeHeader{
+  background: url('/imgs/img/backgrounds/bg-home.jpg') no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.card-right,.card-left{
+  border: 2px solid var(--cor-p1);
+  border-radius: 5px;
+  padding: 16px 10px;
+  max-width: 300px;
+  max-height: 300px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #00A3FE 50%, #fff 50%);
+  background-size: 100% 200%;
+  background-position: bottom left;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  
+  
+}
+.card-right:hover,.card-left:hover{
+  transition: all .4s ease-out;
+  background-position: top left;
+  transform: scale(1.1);
+  border: 2px solid var(--cor-11);
+}
+.cards-left{
+  margin-right: 28px;
+  margin-top: 36px;
+}
+.card-marcas{
+  display: flex;
+  margin-top: 60px;
+}
+.caixa-marcas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  gap: 36px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-marcas p::before{
+  content: '';
+  width: 100px;
+  height: 4px;
+  display: flex;
+  position: relative;
+  margin:16px auto;
+  background: var(--cor-11);
+}
+.conteudo-marcas{
+  align-self: center;
+}
+
+.btns{
+  display: flex;
+  gap: 60px;
+}
+
+.cards-servicos{
+  margin-top: 32px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+.card-servi{
+  box-sizing: border-box;
+  border-top: 10px solid var(--cor-p1);
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  background: var(--cor-0);
+}
+
+.espaco-icon-service{
+  padding-top: 30px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+}
+.espaco-texto-service{
+  padding-left: 16px;
+}
+.bola{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--cor-p1);
+}
+.bola.ativo{
+  background: #00A3FE;
+}
+.div-option{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cont-option{
+  display: flex;
+  margin-bottom: 8px;
+}
+.linha-option{
+  width: 100%;
+  height: 6px;
+  background-color: var(--cor-11);
+  border-radius: 8px;
+  position: relative;
+}
+.progresso{
+  width: 25%;
+  position: absolute;
+  height: 6px;
+  display: block;
+  left: 0;
+  /* left: calc(100% - 25%); */
+  background-color: var(--cor-p1);
+  border-radius: 8px;
+  z-index: 2;
+}
+.item-click{
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+.img-carro{
+  width: 320px;
+  height: 300px;
+  border-radius: 8px 8px 0 0;
+}
+.coluna-carro{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.info-carro{
+  background: var(--cor-11);
+  border-radius: 0 0 8px 8px;
+}
+.valor-potencia{
+  display: flex;
+  justify-content: space-between;
+}
+.cavalos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.info-carro{
+  padding: 16px 20px;
+}
+.carro{
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.config-btn-meio{
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,273 @@
+/* Estilos resetados */
+
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--cor-2);
+  height: 9000px;
+}
+p,h1,h2,h3{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: var(--cor-0);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fonts do site*/
+ .font-title-header{
+  font: 700 64px/1.2 'Mulish', sans-serif;
+ }
+ .font-24-bold{
+  font: 700 24px 'Mulish', sans-serif;
+ }
+ .font-nav-menu{
+  font: 700 18px/1.1 'Mulish', sans-serif;
+ }
+ .font-btn{
+  font: 700 18px 'Mulish', sans-serif;
+ }
+ .font-subTitle{
+  font: 700 20px 'Mulish', sans-serif;
+ }
+ .font-p-roboto{
+  font: 400 20px/1.2 'Roboto', sans-serif;
+ }
+ .font-p-roboto-16{
+  font: 400 16px/1.2 'Roboto', sans-serif;
+ }
+ .font-h2{
+  font: 600 48px/1.2 'Mulish', sans-serif;
+ }
+ .font-regular{
+  font: 400 48px/1.2 'Mulish', sans-serif;
+ }
+ .font-regular-32{
+  font: 400 32px/1.2 'Mulish', sans-serif;
+ }
+ .font-semibold{
+  font: 600 40px/1.2 'Mulish', sans-serif;
+ }
+ .font-medium{
+  font: 500 40px/1.2 'Mulish', sans-serif;
+ }
+
+
+/* Cores do Site */
+
+:root{
+  --cor-0:#FFFFFF;
+  --cor-1:#F7F7F7;
+  --cor-2:#ECECEC;
+  --cor-3:#DDDDDD;
+  --cor-4:#CCCCCC;
+  --cor-5:#B1B1B1;
+  --cor-6:#999999;
+  --cor-7:#717171;
+  --cor-8:#595959;
+  --cor-9:#414141;
+  --cor-10:#2D2D2D;
+  --cor-11:#121212;
+  --cor-12:#000000;
+  --cor-p1:#00A3FE;
+  --cor-p2:#0069D2;
+  --cor-p3:#00419C;
+  --cor-p4:#002162;
+  --cor-p5:#000A29;
+}
+
+.cor-0{
+  color: var(--cor-0);
+}
+.cor-1{
+  color: var(--cor-1);
+}
+.cor-2{
+  color: var(--cor-2);
+}
+.cor-3{
+  color: var(--cor-3);
+}
+.cor-4{
+  color: var(--cor-4);
+}
+.cor-5{
+  color: var(--cor-5);
+}
+.cor-6{
+  color: var(--cor-6);
+}
+.cor-7{
+  color: var(--cor-7);
+}
+.cor-8{
+  color: var(--cor-8);
+}
+.cor-9{
+  color: var(--cor-9);
+}
+.cor-10{
+  color: var(--cor-10);
+}
+.cor-11{
+  color: var(--cor-11);
+}
+.cor-12{
+  color: var(--cor-12);
+}
+.cor-p1{
+  color: var(--cor-p1);
+}
+.cor-p2{
+  color: var(--cor-p2);
+}
+.cor-p3{
+  color: var(--cor-p3);
+}
+.cor-p4{
+  color: var(--cor-p4);
+}
+.cor-p5{
+  color: var(--cor-p5);
+}
+
+
+/* margins e padding */
+
+.mt-40-text-aling{
+  margin-top: 40px;
+  text-align: center;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-64{
+  margin-bottom: 64px;
+}
+.mb-16{
+  margin-bottom: 16px;
+}
+.mb-120{
+  margin-bottom: 120px;
+}
+.padin-tb{
+  padding:40px 0;
+}
+.mb-8{
+  margin-bottom: 8px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+
+
+/* Config padrao */
+
+.container{
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-dark{
+  background-color: var(--cor-11);
+}
+
+.btn-primary{
+  color: var(--cor-p5);
+  background: linear-gradient(180deg, #00A3FE 0%, #0082CB 100%);
+  border-radius: 5px;
+  padding: 16px 32px;
+  display: inline-block;
+  cursor: pointer;
+  max-width: max-content;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+}
+.btn-primary-carro{
+  color: var(--cor-p5);
+  background: linear-gradient(180deg, #00A3FE 0%, #0082CB 100%);
+  border-radius: 5px;
+  padding: 16px 32px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.btn-primary-carro:hover{
+  background: linear-gradient(180deg, #008fdb 0%, #0271b1 100%);
+}
+.btn-second{
+  color: var(--cor-4);
+  background: var(--cor-10);
+  border-radius: 5px;
+  padding: 16px 32px;
+  display: inline-block;
+  cursor: pointer;
+  max-width: max-content;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+}
+.btn-second:hover{
+  background: var(--cor-9);
+}
+.btn-primary:hover{
+  background: linear-gradient(180deg, #008fdb 0%, #0271b1 100%);
+}
+
+.header-nav{
+  display: flex;
+  padding-top: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-prin{
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.titulo-header-pag{
+  height: 40rem;
+  display: grid;
+  align-items: center;
+}
+
+.conteudo-titulo{
+  max-width: 50%;
+}
+.conteudo-titulo h1{
+  margin-bottom: 32px;
+}
+.conteudo-titulo p{
+  margin-bottom: 24px;
+}
+
+
+.alinharText{
+  text-align: center;
+}
+
