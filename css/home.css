@@ -1,5 +1,5 @@
 .homeHeader{
-  background: url('/imgs/img/produto/carro-home-3.jpg') no-repeat center center;
+  background-image: url('/imgs/img/produto/carro-home-3.jpg') no-repeat center center;
   background-size: cover;
   height: 700px;
   width: 100%;
