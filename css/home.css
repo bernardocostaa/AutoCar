@@ -209,4 +209,7 @@
   .card-right:hover,.card-left:hover{
     transform: scale(1);
   }
+  .conteudo-marcas{
+    display: none;
+  }
 }
