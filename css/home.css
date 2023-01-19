@@ -131,14 +131,13 @@
   cursor: pointer;
 }
 .img-carro{
-  width: 320px;
-  height: 300px;
   border-radius: 8px 8px 0 0;
 }
 .coluna-carro{
-  display: flex;
-  gap: 60px;
-  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0 30px;
 }
 .info-carro{
   background: var(--cor-11);
@@ -146,18 +145,25 @@
 }
 .valor-potencia{
   display: flex;
+  white-space: nowrap;
   justify-content: space-between;
 }
 .cavalos{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 .info-carro{
   padding: 16px 20px;
 }
 .carro{
+  margin-bottom: 40px;
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+}
+.lista-carros{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .config-btn-meio{
@@ -167,7 +173,7 @@
 
 
 
-@media(max-width:1100px){
+@media(max-width:1050px){
   .caixa-marcas{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -185,8 +191,28 @@
   .btns{
     justify-content: center;
   }
+  .cards-servicos{
+    gap: 40px;
+  }
 }
-
+@media(max-width:768px){
+   .cards-servicos{
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-servi{
+    max-width: 80%;
+    height:auto;
+    text-align: center;
+  }
+  .espaco-icon-service{
+    margin: 0 auto;
+  }
+  .espaco-texto-service{
+    padding: 8px;
+  }
+}
 @media(max-width:576px){
   .card-marcas{
     display: block;
@@ -211,5 +237,16 @@
   }
   .conteudo-marcas{
     display: none;
+  }
+  .info-carro p {
+    text-align: center;
+  }
+  .valor-potencia{
+    flex-direction: column;
+    text-align: center;
+  }
+  .cavalos{
+    margin-top: 8px;
+    justify-content: center;
   }
 }
