@@ -10,7 +10,7 @@
   border-radius: 5px;
   padding: 16px 10px;
   max-width: 300px;
-  max-height: 300px;
+  height: auto;
   box-sizing: border-box;
   cursor: pointer;
   background: linear-gradient(to bottom, #00A3FE 50%, #fff 50%);
@@ -32,13 +32,13 @@
 }
 .card-marcas{
   display: flex;
+  gap: 24px;
   margin-top: 60px;
 }
 .caixa-marcas{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: relative;
-  gap: 36px;
+  gap: 30px;
   padding: 0 20px;
   max-width: 1400px;
   margin-left: auto;
@@ -163,4 +163,50 @@
 .config-btn-meio{
   display: block;
   margin: 0 auto;
+}
+
+
+
+@media(max-width:1100px){
+  .caixa-marcas{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .conteudo-marcas{
+    text-align: center;
+  }
+  .card-marcas{
+    margin-top: 60px;
+  }
+  .card-right,.card-left{
+    max-width: 100%;
+    max-height: 300px;
+  }
+  .btns{
+    justify-content: center;
+  }
+}
+
+@media(max-width:576px){
+  .card-marcas{
+    display: block;
+  }
+  .btns{
+    display: block;
+  }
+  .cards-left{
+    margin-right: 0px;
+  }
+  .cards-right{
+    margin-top: 24px;
+  }
+  .btns a + a{
+    margin-top: 12px;
+  }
+  .font-p-roboto{
+    font-size: 18px;
+  }
+  .card-right:hover,.card-left:hover{
+    transform: scale(1);
+  }
 }

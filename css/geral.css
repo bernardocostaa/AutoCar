@@ -200,6 +200,7 @@ img {
   padding: 16px 32px;
   display: inline-block;
   cursor: pointer;
+  white-space: nowrap;
   max-width: max-content;
   box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
 }
@@ -226,6 +227,7 @@ img {
   border-radius: 5px;
   padding: 16px 32px;
   display: inline-block;
+  white-space: nowrap;
   cursor: pointer;
   max-width: max-content;
   box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
@@ -242,6 +244,7 @@ img {
   padding-top: 32px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-menu-prin{
@@ -257,7 +260,7 @@ img {
 }
 
 .conteudo-titulo{
-  max-width: 50%;
+  max-width: 100%;
 }
 .conteudo-titulo h1{
   margin-bottom: 32px;
@@ -271,3 +274,27 @@ img {
   text-align: center;
 }
 
+
+@media(max-width:768px){  
+  .font-title-header{
+    font-size: 48px;
+  }
+  .conteudo-titulo p{
+  font-size: 18px;
+  }
+}
+
+@media(max-width:576px){
+  .font-title-header{
+    font-size: 40px;
+  }
+  .conteudo-titulo p{
+  font-size: 16px;
+  }
+}
+
+@media(min-width:768px){
+  .conteudo-titulo{
+    max-width: 50%;
+  }
+}
