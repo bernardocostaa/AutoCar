@@ -40,6 +40,9 @@ img {
  .font-subTitle{
   font: 700 20px 'Mulish', sans-serif;
  }
+ .font-footer-nav{
+  font: 400 20px 'Mulish', sans-serif;
+ }
  .font-p-roboto{
   font: 400 20px/1.2 'Roboto', sans-serif;
  }
@@ -58,8 +61,14 @@ img {
  .font-semibold{
   font: 600 40px/1.2 'Mulish', sans-serif;
  }
+ .font-semibol-24{
+  font: 500 24px/1.2 'Mulish', sans-serif;
+ }
  .font-medium{
   font: 500 40px/1.2 'Mulish', sans-serif;
+ }
+ .font-footer-roboto-medio{
+  font: 500 24px/1.2 'Roboto', sans-serif;
  }
 
 
@@ -154,6 +163,9 @@ img {
 .mb-24{
   margin-bottom: 24px;
 }
+.mb-32{
+  margin-bottom: 32px;
+}
 .mb-20{
   margin-bottom: 20px;
 }
@@ -175,6 +187,9 @@ img {
 .mb-60{
   margin-bottom: 60px;
 }
+.pd-tb-60{
+  padding: 60px 0;
+}
 
 
 /* Config padrao */
@@ -191,6 +206,9 @@ img {
 .bg-dark{
   background-color: var(--cor-11);
 }
+.bg-footer{
+  background-color: var(--cor-12);
+}
 
 .btn-primary{
   color: var(--cor-p5);
@@ -200,7 +218,6 @@ img {
   display: inline-block;
   cursor: pointer;
   white-space: nowrap;
-  max-width: max-content;
   box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
 }
 .btn-primary-carro{
@@ -228,7 +245,6 @@ img {
   display: inline-block;
   white-space: nowrap;
   cursor: pointer;
-  max-width: max-content;
   box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
 }
 .btn-second:hover{

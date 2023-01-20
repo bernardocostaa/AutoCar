@@ -173,6 +173,95 @@
 }
 
 
+.abrirFechar{
+  content: '';
+  position: relative;
+  display:block;
+  background: var(--cor-p1);
+  width: 24px;
+  height: 3px;
+}
+.abrirFechar.ativo::after{
+  content: '';
+  position:relative;
+  rotate: 90deg;
+  display: block;
+  background: var(--cor-p1);
+  width: 24px;
+  height: 3px;
+}
+.div-controle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  cursor: pointer;
+  gap: 8px;
+}
+.duvidas{
+  display: flex;
+}
+.quadros-ajuda{
+  display: grid;
+  align-items: center;
+}
+.quadros-ajuda{
+  padding-right: 20px;
+}
+.cada-quadro::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: var(--cor-6);
+  display: block;
+  margin: 20px 0;
+}
+.footer-colunas{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.medias{
+  display: flex;
+  gap: 32px;
+  cursor: pointer;
+}
+.logo-social{
+  display: grid;
+  align-items: center;
+}
+.input-footer{
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 5px;
+  width: 80%;
+  box-sizing: border-box;
+}
+.form-footer{
+  display: grid;
+  gap: 12px;
+  box-sizing: border-box;
+  justify-items: center;
+}
+.form-footer input{
+  width: 100%;
+}
+.font-footer-nav li{
+  margin-bottom: 16px;
+}
+.font-footer-nav li a:hover{
+  color: var(--cor-p1);
+}
+.form-contato{
+  align-self: center;
+}
+.navegacao{
+  margin-left: 60px;
+}
+.img-duvidas{
+  align-self: center;
+}
+
 @media(min-width:1050px){
   .coluna-carro{
     flex-basis: 0;
@@ -180,9 +269,13 @@
     max-width: 100%;
     padding: 0 30px;
   }
+  .img-duvidas{
+    align-self: center;
+  }
 }
 
 @media(max-width:1050px){
+
   .caixa-marcas{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -202,6 +295,9 @@
   }
   .cards-servicos{
     gap: 40px;
+  }
+  .footer-colunas{
+    gap: 16px;
   }
 }
 @media(max-width:768px){
@@ -235,6 +331,30 @@
   }
   .cont-option{
     margin-bottom: 16px;
+  }
+  .duvidas{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .quadros-ajuda{
+    padding-right: 0;
+  }
+  .quadros-ajuda h3{
+    text-align: center;
+  }
+  .footer-colunas{
+    grid-template-columns: 1fr;
+  }
+  .logo-social{
+    justify-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .navegacao{
+    margin-left: 0;
+  }
+  .form-footer{
+    margin-bottom: 32px;
   }
 }
 @media(max-width:576px){
