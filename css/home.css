@@ -217,6 +217,7 @@
   }
   .espaco-icon-service{
     margin: 0 auto;
+    padding-left: 0;
   }
   .espaco-texto-service{
     padding: 8px;
@@ -224,7 +225,17 @@
   .linha-option,.bola{
     display: none;
   }
-
+  .item-click p.ativo{
+    color:  var(--cor-p1);
+    font-weight: bold;
+  }
+  .item-click p:hover{
+    color:  var(--cor-p1);
+    font-weight: bold;
+  }
+  .cont-option{
+    margin-bottom: 16px;
+  }
 }
 @media(max-width:576px){
   .card-marcas{
@@ -272,11 +283,10 @@
     display: grid;
     gap: 4px;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 8px;
 }
 .item-click p{
-  margin: 0 5px;
-  font-size: 16px;
+  margin: 2px 5px;
+  font-size: 18px;
 }
 .item-click p.ativo{
   color:  var(--cor-p1);
