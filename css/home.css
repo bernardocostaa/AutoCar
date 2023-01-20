@@ -128,16 +128,15 @@
 .item-click{
   display: flex;
   gap: 8px;
+  white-space: nowrap;
   cursor: pointer;
 }
 .img-carro{
   border-radius: 8px 8px 0 0;
 }
 .coluna-carro{
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-  padding: 0 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .info-carro{
   background: var(--cor-11);
@@ -145,6 +144,7 @@
 }
 .valor-potencia{
   display: flex;
+  gap: 4px;
   white-space: nowrap;
   justify-content: space-between;
 }
@@ -161,10 +161,11 @@
 }
 .lista-carros{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-}
+}.lista-carros
 
 .config-btn-meio{
   display: block;
@@ -172,6 +173,14 @@
 }
 
 
+@media(min-width:1050px){
+  .coluna-carro{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
 
 @media(max-width:1050px){
   .caixa-marcas{
@@ -212,6 +221,10 @@
   .espaco-texto-service{
     padding: 8px;
   }
+  .linha-option,.bola{
+    display: none;
+  }
+
 }
 @media(max-width:576px){
   .card-marcas{
@@ -249,4 +262,28 @@
     margin-top: 8px;
     justify-content: center;
   }
+  .btn-primary-carro{
+    padding: 12px 0;
+  }
+  .btn-primary-carro img{
+    display: none;
+  }
+  .cont-option {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 8px;
+}
+.item-click p{
+  margin: 0 5px;
+  font-size: 16px;
+}
+.item-click p.ativo{
+  color:  var(--cor-p1);
+  font-weight: bold;
+}
+.item-click p:hover{
+  color:  var(--cor-p1);
+  font-weight: bold;
+}
 }
