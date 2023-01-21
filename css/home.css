@@ -135,8 +135,8 @@
   border-radius: 8px 8px 0 0;
 }
 .coluna-carro{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .info-carro{
   background: var(--cor-11);
@@ -163,8 +163,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 20px;
+  margin-left: 20px;
 }.lista-carros
 
 .config-btn-meio{
@@ -262,20 +262,37 @@
   align-self: center;
 }
 
+.coluna-carro{
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
 @media(min-width:1050px){
-  .coluna-carro{
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    padding: 0 30px;
-  }
   .img-duvidas{
     align-self: center;
   }
 }
 
 @media(max-width:1050px){
-
+  .lista-carros{
+    margin: auto;
+  }
+.coluna-carro{
+  flex: 0 0 30%;
+  max-width:30%;
+}
+.valor-potencia{
+  flex-direction: column;
+  align-items: center;
+}
+.info-carro p {
+  text-align: center;
+  white-space: nowrap;
+}
+.btn-primary-carro img{
+  display: none;
+}
   .caixa-marcas{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -301,6 +318,10 @@
   }
 }
 @media(max-width:768px){
+.coluna-carro{
+  flex: 0 1 auto;
+  max-width:100%;
+}
    .cards-servicos{
     gap: 20px;
     flex-direction: column;
@@ -382,22 +403,12 @@
   .conteudo-marcas{
     display: none;
   }
-  .info-carro p {
-    text-align: center;
-  }
-  .valor-potencia{
-    flex-direction: column;
-    text-align: center;
-  }
   .cavalos{
     margin-top: 8px;
     justify-content: center;
   }
   .btn-primary-carro{
     padding: 12px 0;
-  }
-  .btn-primary-carro img{
-    display: none;
   }
   .cont-option {
     display: grid;
