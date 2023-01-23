@@ -1,8 +1,5 @@
 .homeHeader{
-  background: url('../imgs/img/backgrounds/bghome.jpg') no-repeat center center;
-  background-size: cover;
-  height: 700px;
-  width: 100%;
+  background: url('../imgs/img/backgrounds/bghome.jpg') no-repeat center center/cover;
 }
 
 .card-right,.card-left{

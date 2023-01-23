@@ -1,0 +1,119 @@
+.contatoHeader{
+  background: url('../imgs/img/backgrounds/bgcontato.jpg') no-repeat center center/cover;
+}
+body{
+  height: 5000px;
+}
+.contato-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+.info-form,.form-para-contato{
+  padding: 40px;
+}
+.cards-info{
+  display: flex;
+}
+.form-para-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-para-contato label{
+  font:500 18px/1.2 'Mulish', sans-serif;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.form-para-contato input ,.espaco-total textarea{
+  font: 400 16px/1.2 'Roboto', sans-serif;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid var(--cor-3);
+  outline: 0;
+  width: 100%;
+  background-color: var(--cor-2);
+  box-sizing: border-box;
+  resize: none;
+}
+.form-para-contato input:focus ,.espaco-total textarea:focus{
+  box-shadow: 0 0 0 2px var(--cor-p1);
+  background-color: var(--cor-0);
+}
+.espaco-total{
+  grid-column: span 2;
+}
+
+.icone-info{
+  margin-right: 8px;
+}
+.btn-form{
+  color: var(--cor-p5);
+  background: linear-gradient(180deg, #00A3FE 0%, #0082CB 100%);
+  border-radius: 5px;
+  padding: 16px 32px;
+  display: inline-block;
+  cursor: pointer;
+  max-width: max-content;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+}
+.btn-form:hover{
+  background: linear-gradient(180deg, #008fdb 0%, #0271b1 100%);
+}
+
+.email{
+  background: url('/imgs/icons/email.svg') no-repeat 0 2px;
+  margin-bottom: 32px;
+  padding-left: 28px;
+}
+.telefone{
+  background: url('/imgs/icons/telefone.svg') no-repeat 0 2px;
+  margin-bottom: 32px;
+  padding-left: 28px;
+}
+.mapa{
+  background: url('/imgs/icons/local.svg') no-repeat 0 2px;
+  margin-bottom: 32px;
+  padding-left: 28px;
+}
+.form-para-contato{
+  position: relative;
+}
+
+.form-para-contato::before{
+  content: '';
+  height: 80%;
+  width: 4px;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: var(--cor-p1);
+  position: absolute;
+  border-radius: 5px;
+}
+
+@media(max-width:768px){
+  .contato-form{
+    grid-template-columns: 1fr;
+  } 
+  .form-para-contato::before{
+    content: '';
+    height: 4px;
+    width: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0%;
+    background-color: var(--cor-p1);
+    position: absolute;
+  }
+}
+@media(max-width:576px){
+  .form-para-contato{
+    display: block;
+  }
+  .form-para-contato input,textarea {
+    margin-bottom: 12px;
+  }
+}
