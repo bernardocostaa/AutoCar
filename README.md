@@ -1,5 +1,5 @@
 <h1 align="center">
-  Portfólio
+  AutoCar
 </h1>
 
 <p align="center">
@@ -18,13 +18,13 @@
 
 Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
-- HTML
-- Sass
+- HTML5
+- CSS3
 - JavaScript
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Portfólio](https://rogersanttoss-portfolio.netlify.app/)
+Link do Projeto: [AutoCar](https://bernardocostaa.github.io/AutoCar/)
 
 
 ## :memo: Licença
@@ -33,4 +33,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./.github/LICENS
 
 ---
 
-Feito por Roger Santos
+Feito por Bernardo Costa
