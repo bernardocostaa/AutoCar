@@ -1,9 +1,6 @@
 .contatoHeader{
   background: url('../imgs/img/backgrounds/bgcontato.jpg') no-repeat center center/cover;
 }
-body{
-  height: 5000px;
-}
 .contato-form {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -79,6 +76,10 @@ body{
   margin-bottom: 32px;
   padding-left: 28px;
 }
+.relogio{
+  background: url('/imgs/icons/horario.svg') no-repeat 0 2px;
+  padding-left: 28px;
+}
 .form-para-contato{
   position: relative;
 }
@@ -92,6 +93,45 @@ body{
   background-color: var(--cor-p1);
   position: absolute;
   border-radius: 5px;
+}
+.lojas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.loja img{
+  border-radius:5px 5px 0 0;
+}
+.loja{
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.loja-info{
+  background-color: var(--cor-11);
+  padding: 32px 40px;
+  border-radius: 0 0 5px 5px;
+}
+.posicao-cards{
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+}
+.linha{
+  position: relative;
+}
+.linha::before{
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: var(--cor-p1);
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cards-loja{
+  margin-top: 32px;
 }
 
 @media(max-width:768px){
@@ -108,6 +148,15 @@ body{
     background-color: var(--cor-p1);
     position: absolute;
   }
+  .lojas{
+    grid-template-columns: 1fr;
+  }
+  .posicao-cards{
+    justify-items: center;
+  }
+  .info-form h3 {
+    text-align: center;
+  }
 }
 @media(max-width:576px){
   .form-para-contato{
@@ -115,5 +164,20 @@ body{
   }
   .form-para-contato input,textarea {
     margin-bottom: 12px;
+  }
+  .posicao-cards{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .cards-loja{
+    text-align: center;
+  }
+  .info-form, .form-para-contato{
+    padding: 24px;
+  }
+}
+@media(max-width:379px){
+  .ajuste-texto{
+    font: 600 36px/1.2 'Mulish', sans-serif;
   }
 }
