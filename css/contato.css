@@ -62,22 +62,22 @@
 }
 
 .email{
-  background: url('/imgs/icons/email.svg') no-repeat 0 2px;
+  background: url('../imgs/icons/email.svg') no-repeat 0 2px;
   margin-bottom: 32px;
   padding-left: 28px;
 }
 .telefone{
-  background: url('/imgs/icons/telefone.svg') no-repeat 0 2px;
+  background: url('../imgs/icons/telefone.svg') no-repeat 0 2px;
   margin-bottom: 32px;
   padding-left: 28px;
 }
 .mapa{
-  background: url('/imgs/icons/local.svg') no-repeat 0 2px;
+  background: url('../imgs/icons/local.svg') no-repeat 0 2px;
   margin-bottom: 32px;
   padding-left: 28px;
 }
 .relogio{
-  background: url('/imgs/icons/horario.svg') no-repeat 0 2px;
+  background: url('../imgs/icons/horario.svg') no-repeat 0 2px;
   padding-left: 28px;
 }
 .form-para-contato{
