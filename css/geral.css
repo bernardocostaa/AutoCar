@@ -18,7 +18,7 @@ a{
   text-decoration: none;
   color: var(--cor-0);
 }
-img {
+.img-response {
   display: block;
   max-width: 100%;
   height: auto;
@@ -48,6 +48,9 @@ img {
  }
  .font-p-roboto-16{
   font: 400 16px/1.2 'Roboto', sans-serif;
+ }
+ .font-p-roboto-18{
+  font: 400 18px/1.2 'Roboto', sans-serif;
  }
  .font-h2{
   font: 600 48px/1.2 'Mulish', sans-serif;
@@ -198,6 +201,9 @@ img {
 }
 .mb-60{
   margin-bottom: 60px;
+}
+.mb-80{
+  margin-bottom: 80px;
 }
 .pd-tb-60{
   padding: 60px 0;

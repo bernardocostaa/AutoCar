@@ -336,7 +336,7 @@
   .espaco-texto-service{
     padding: 8px;
   }
-  .linha-option,.bola{
+  .linha-option,.item-click .bola{
     display: none;
   }
   .item-click p.ativo{

@@ -1,0 +1,63 @@
+.carrosHeader{
+  background: url('../imgs/img/backgrounds/bgcarros.jpg') no-repeat center center/cover;
+}
+.justify-items-end{
+  justify-items: end;
+}
+.cont-carro{
+  padding: 20px 40px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.carro-slide{
+  position: relative;
+}
+.controles{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-next,.btn-prev{
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 12px;
+  color: var(--cor-p1);
+  transition: all .3s ;
+  font-weight: 500;
+  z-index: 1;
+  border-radius: 50%;
+}
+.btn-next:hover,.btn-prev:hover{
+  /* background: rgba(255, 255, 255, 0.5); */
+  transform: scale(1.1);
+}
+.item-slide img{
+  border-radius: 8px;
+}
+
+.index-slide{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+.bola{
+  cursor: pointer;
+}
+
+@media(max-width:1050px){
+  .card-carro{
+    grid-template-columns: 1fr;
+  }
+}
