@@ -57,7 +57,72 @@
 }
 
 @media(max-width:1050px){
-  .card-carro{
+  .card-carro,.cont-carro{
     grid-template-columns: 1fr;
+  }
+  .card-todos-carros{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+  .carro-infos{
+    grid-area: 1;
+  }
+  .carro-infos p {
+    display: none;
+  }
+  .card-carro{
+    color: var(--cor-0);
+    background-color: var(--cor-11);
+    margin: 15px 20px;
+    border-radius: 8px;
+  }
+  .carro-infos h2{
+    font-size: 30px;
+  }
+ 
+}
+@media(max-width:768px){
+  .card-todos-carros{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    overflow-x: auto;
+    padding-bottom: 24px;
+  }
+  .seta{
+    position: relative;
+  }
+  .seta::after{
+    content: '→';
+    position: absolute;
+    top: 90px;
+    font-size: 46px;
+    right: 25px;
+    z-index: 4;
+    color: var(--cor-p1);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+  .item-slide img{
+    max-width: 250px;
+    width: 250px;
+  }
+.cont-carro {
+  padding: 20px 25px;
+}
+.btn-next, .btn-prev {
+  padding: 0;
+}
+.carro-infos{
+  text-align: center;
+}
+}
+
+
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
   }
 }
