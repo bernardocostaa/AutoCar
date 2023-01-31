@@ -1,0 +1,44 @@
+.SobreHeader{
+  background: url('../imgs/img/backgrounds/bgsobre.jpg') no-repeat center center/cover;
+}
+
+.img-sobre{
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.sobre-caixa{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.esfera{
+  padding: 40px;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(180deg, #35B6FF 0%, #00A2FD 6.25%, #0074B5 100%);
+  border: 6px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+@media(max-width:1050px){
+  .sobre-caixa{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .img-sobre{
+    max-width: 100%;
+  }
+  .sobre-info{
+    text-align: center;
+  }
+}
+
+@media(max-width:768px){
+  .caixa-sobre-img{
+    grid-area: 1;
+  }
+}
