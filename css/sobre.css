@@ -27,8 +27,8 @@
   justify-content: space-around;
 }
 .esfera{
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background: linear-gradient(180deg, #35B6FF 0%, #00A2FD 6.25%, #0074B5 100%);
   border: 6px solid #FFFFFF;
   border-radius: 50%;
@@ -47,6 +47,11 @@
   margin-bottom: 24px;
   font-weight: bold;
 }
+.flex-item img{
+  max-width: 100px;
+  width: 100%;
+  height: 85px;
+}
 
 @media(max-width:1050px){
   .sobre-caixa{
@@ -59,10 +64,64 @@
   .sobre-info{
     text-align: center;
   }
+  .diferencial{
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-area-respose{
+   grid-template-areas: 
+   "info-1 info-2"
+   " bola bola";
+  }
+  .grid-area-respose .info-1{
+    grid-area: info-1;
+  }
+  .grid-area-respose .info-2{
+    grid-area: info-2;
+  }
+  .grid-area-respose .bola-div{
+    grid-area: bola;
+  }
+  .revese{
+    flex-direction: row-reverse;
+  }
+  .ajuste-div{
+    gap: 8px;
+  }
+  .bola-div{
+    margin-top: 16px;
+   }
+   .ajuste-div:first-of-type{
+    margin-bottom: 16px;
+   }
 }
 
 @media(max-width:768px){
   .caixa-sobre-img{
     grid-area: 1;
+  }
+  .diferencial{
+    grid-template-columns: 1fr;
+  }
+  .grid-area-respose{
+    grid-template-areas: 
+    "info-1"
+    "info-2"
+    "bola";
+   }
+  
+}
+
+@media(max-width:576px){
+  .bola-div{
+    display: none;
+  }
+  .ajuste-div{
+    gap: 16px;
+  }
+  .flex-item p{
+    font-size: 20px;
+  }
+  .flex-item img{
+    max-width: 80px;
   }
 }
