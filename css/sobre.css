@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 .info-box {
   padding: 16px;
@@ -52,8 +53,72 @@
   width: 100%;
   height: 85px;
 }
-
+.flex-item:hover{
+  transform: translate3d(50px,0,0) scale(1.1);
+  transition: .3s all;
+}
+.revese:hover{
+  cursor: pointer;
+  transform: translate3d(-50px,0,0) scale(1.1);
+  transition: .3s all;
+}
+.bgSobreTime{
+  background: url('../imgs/img/backgrounds/bgsobre2.jpg') no-repeat center center/cover;
+  height:auto;
+  width: 100%;
+}
+.lideres-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.social-midia img{
+  width: 25px;
+  height: 25px;
+}
+.social-midia ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.social-midia ul li a {
+  display: flex;
+  background-color: var(--cor-p1);
+  border-radius: 50%;
+  padding: 8px;
+}
+.info-lider h4{
+  position: relative;
+}
+.info-lider h4::before{
+  content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--cor-p1);
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-lider img{
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--cor-p1);
+}
+.social-midia ul li a:hover{
+  opacity: .6;
+  transition: .3s all;
+}
 @media(max-width:1050px){
+  .lideres-div{
+    grid-template-columns: 1fr 1fr;
+   }
+   .lider:last-of-type{
+    margin-top: 16px;
+    grid-column: 1/-1;
+   }
   .sobre-caixa{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -81,9 +146,6 @@
   .grid-area-respose .bola-div{
     grid-area: bola;
   }
-  .revese{
-    flex-direction: row-reverse;
-  }
   .ajuste-div{
     gap: 8px;
   }
@@ -96,6 +158,12 @@
 }
 
 @media(max-width:768px){
+  .lider{
+    margin-top: 16px;
+  }
+  .lideres-div{
+    grid-template-columns: 1fr;
+   }
   .caixa-sobre-img{
     grid-area: 1;
   }
@@ -108,10 +176,12 @@
     "info-2"
     "bola";
    }
+  }
   
-}
-
-@media(max-width:576px){
+  @media(max-width:576px){
+  .revese:hover,.flex-item:hover{
+    transform: none;
+  }
   .bola-div{
     display: none;
   }
@@ -120,8 +190,5 @@
   }
   .flex-item p{
     font-size: 20px;
-  }
-  .flex-item img{
-    max-width: 80px;
   }
 }

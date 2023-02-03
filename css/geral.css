@@ -5,7 +5,7 @@ body{
   padding: 0;
   background: var(--cor-2);
 }
-p,h1,h2,h3,h5{
+p,h1,h2,h3,h4,h5{
   margin: 0;
   padding: 0;
 }
@@ -198,6 +198,9 @@ a{
 }
 .mb-8{
   margin-bottom: 8px;
+}
+.mb-12{
+  margin-bottom: 12px;
 }
 .mb-60{
   margin-bottom: 60px;
