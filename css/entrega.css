@@ -1,0 +1,36 @@
+.entregaHeader{
+  background: url('../imgs/img/backgrounds/bgentrega.jpg') no-repeat center center/cover;
+}
+
+.passo-1-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+}
+.cont-passos{
+  padding: 20px 40px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.passo1-item {
+  position: relative;
+}
+.passos-info-linha::after {
+  content: '→';
+  color: var(--cor-p1);
+  font-size: 60px;
+  font-weight: bolder;
+  top: 35%;
+  right: -70px;
+  position: absolute;
+}
+
+.passos-info img{
+width: 100%;
+}
+
+.passo1-item p{
+  margin-top: 30px;
+}
