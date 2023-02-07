@@ -64,6 +64,9 @@ width: 100%;
   .passos-info-linha::after{
     display: none;
   }
+  .passo-4-box{
+    grid-template-columns: 1fr;
+  }
 }
 @media(max-width:768px){
   .passo-1-box,.passo-2-3-box,.passo-4-box{
