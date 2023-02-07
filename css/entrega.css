@@ -2,10 +2,24 @@
   background: url('../imgs/img/backgrounds/bgentrega.jpg') no-repeat center center/cover;
 }
 
-.passo-1-box{
+.passo-1-box,.passo-2-3-box{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 80px;
+}
+.passo-4-box{
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr 2fr;
+}
+.elemento-sobre::before{
+  content: '';
+  background: var(--cor-p1);
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  transform: translateY(50%);
+  left: 12px;
 }
 .cont-passos{
   padding: 20px 40px;
@@ -28,12 +42,13 @@
 width: 100%;
 }
 
-.passo1-item p{
+.passo1-item p,.passo-2-3-item p{
   margin-top: 30px;
 }
 
+
 @media(max-width:1050px){
-  .passo-1-box{
+  .passo-1-box,.passo-2-3-box{
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
@@ -42,17 +57,28 @@ width: 100%;
     width: 500px;
     margin: 0 auto;
   }
+  .passo-2-3-item:first-child{
+    grid-column: 1/-1;
+    text-align: center;
+  }
   .passos-info-linha::after{
     display: none;
   }
 }
 @media(max-width:768px){
-  .passo-1-box{
+  .passo-1-box,.passo-2-3-box,.passo-4-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
-  .passo1-item{
+   .passo-1-box p,.passo-2-3-box p,.passo-4-box p{
+    font-size: 16px;
+  }
+  .passo-4-box{
+    gap: 40px;
+  }
+  .passo1-item,.passo-2-3-box{
    max-width: 400px;
   }
   .cont-passos{

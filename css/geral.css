@@ -208,8 +208,17 @@ a{
 .mb-80{
   margin-bottom: 80px;
 }
+.mt-80{
+  margin-top: 80px;
+}
 .pd-tb-60{
   padding: 60px 0;
+}
+.pd-tb-30{
+  padding: 60px 0;
+}
+.mt-30{
+  margin-top: 30px;
 }
 
 
@@ -311,6 +320,9 @@ a{
 
 .alinharText{
   text-align: center;
+}
+.relative{
+  position: relative;
 }
 
 
