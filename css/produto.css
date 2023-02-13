@@ -1,0 +1,49 @@
+.produtoHeader {
+  background: url("../imgs/img/backgrounds/bgcamaro.jpg") no-repeat center
+    center/cover;
+}
+
+.titulo-header-pag-produto{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 35rem;
+  justify-content: center;
+}
+
+.card-info-carro {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  max-width: 400px;
+  padding: 24px 32px;
+  box-sizing: border-box;
+}
+.info-carro-desc {
+  display: flex;
+  justify-content: space-around;
+}
+.progresso-bar-card{
+  display: flex;
+  align-items: center;
+}
+.progresso-bar-card span{
+  margin-left: 8px;
+}
+.progresso-bar {
+  width: 280px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  position: relative;
+}
+.progresso-bar::before {
+  content: "";
+  position: absolute;
+  background-color: var(--cor-0);
+  width: 70%;
+  height: 4px;
+  border-radius: 5px;
+}
+.titulo-progresso-bar{
+  margin-bottom: -8px;
+}
