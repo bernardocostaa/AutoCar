@@ -47,3 +47,47 @@
 .titulo-progresso-bar{
   margin-bottom: -8px;
 }
+.ajuste-card-carro{
+  margin-bottom: 26px;
+}
+
+.bg-video-carro{
+  width: 100%;
+  background: url('../imgs/img/backgrounds/bg-carro-produto.jpg') no-repeat center center/cover;
+  height: 500px;
+}
+.player-video{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.player-video img{
+  cursor: pointer;
+}
+
+
+@media(max-width:576px){
+  .info-carro-desc{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .ajuste-card-carro{
+    margin-bottom: 0;
+  }
+  .info-carro-desc p{
+    margin-bottom: 8px;
+  }
+  .titulo-progresso-bar{
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .progresso-bar-card{
+    flex-direction: column;
+  }
+  .progresso-bar{
+    width: 100%;
+  }
+}
