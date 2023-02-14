@@ -66,6 +66,11 @@
 .player-video img{
   cursor: pointer;
 }
+.grid-produto{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+}
 
 
 @media(max-width:576px){
