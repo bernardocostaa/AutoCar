@@ -71,8 +71,58 @@
   grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
 }
+.info-carro-venda{
+  border-bottom: 3px solid var(--cor-p1);
+}
 
+.w-60{
+  width: 60%;
+}
+.preco-carro{
+  position: relative;
+}
+.preco-carro::after{
+  content: '';
+  position: absolute;
+  background: url(../imgs/svg/indicador-preco.svg);
+  width: 60px;
+  height: 60px;
+  top: -40px;
+  right: 160px;
+  display: block;
+}
+.preco-carro::before{
+  content: 'R$ 520.000.000';
+  position: absolute;
+  color: white;
+  top: -48px;
+  right: 0px;
+  display: block;
+  font: 700 20px 'Mulish', sans-serif;
+}
+.vantagem{
+  display: flex;
+  justify-content: space-between;
+}
+.vantagem-item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.carrro-produto-img{
+  width: 100%;
+}
 
+@media(max-width:1050px){
+  .grid-produto{
+    grid-template-columns: 1fr 1fr;
+  }
+  .carro-info-img{
+    grid-area: 1/-1;
+    grid-column: -1/-3;
+    margin-bottom: 40px;
+  }
+}
 @media(max-width:576px){
   .info-carro-desc{
     flex-direction: column;
@@ -94,5 +144,19 @@
   }
   .progresso-bar{
     width: 100%;
+  }
+  .vantagem{
+    display: none;
+  }
+  .carro-info-img{
+    margin-bottom: 0;
+  }
+  .carro-info-img{
+    margin-top: 40px;
+  }
+}
+@media(max-width:370px){
+  .preco-carro::after{
+    display: none;
   }
 }
