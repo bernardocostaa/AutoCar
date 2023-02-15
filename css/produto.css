@@ -112,6 +112,11 @@
 .carrro-produto-img{
   width: 100%;
 }
+.img-mais-carro{
+  height: auto;
+    width: 100%;
+    border-radius: 12px
+}
 
 @media(max-width:1050px){
   .grid-produto{
@@ -121,6 +126,9 @@
     grid-area: 1/-1;
     grid-column: -1/-3;
     margin-bottom: 40px;
+  }
+  .caixa-produto-img{
+    grid-area: -2;
   }
 }
 @media(max-width:576px){
