@@ -91,13 +91,10 @@
   right: 160px;
   display: block;
 }
-.preco-carro::before{
-  content: 'R$ 520.000.000';
+.preco-flutuante{
   position: absolute;
-  color: white;
   top: -48px;
   right: 0px;
-  display: block;
   font: 700 20px 'Mulish', sans-serif;
 }
 .vantagem{
