@@ -1,0 +1,42 @@
+.btn-menu{
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+}
+
+
+@media(max-width:768px){
+  .btn-menu{
+    display: block;
+    transition: 0.6s all ease;
+  }
+  .btn-menu.ativo{
+   position: relative;
+
+  }
+  .nav-menu-prin{
+    display: none;
+  }
+  .nav-menu-prin{
+    background:var(--cor-p5);
+    right: -100%;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    flex-direction: column;
+    border-radius: 8px 8px 0 0;
+    gap: 20px;
+    transition: 0.6s all ease;
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu-prin.ativo{
+    transition:0.6s;
+    position: absolute;
+    right: 0;
+  }
+  .nav-menu-prin li{
+    padding:12px;
+  }
+}
