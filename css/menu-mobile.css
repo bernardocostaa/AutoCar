@@ -7,42 +7,75 @@
 
 
 @media(max-width:768px){
+  .mobile-layout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .estilo-mobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index:-1;
+    visibility: hidden;
+    transition: all .375s;
+  }
+  .estilo-mobile.ativo{
+        opacity: 1;
+    z-index: 100;
+    visibility: visible;
+  }
+  .estilo-mobile::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    background: var(--cor-p2);
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+  }
+  .estilo-mobile.ativo::before{
+    transform: skew(-14deg) translateX(0);
+  }
   .btn-menu{
     display: block;
     transition: 0.6s all ease;
+    z-index: 10000;
   }
   .btn-menu.ativo{
-   position: relative;
-   transform:  translateX(15px) rotate(-60deg);
+   transform:rotate(-40deg);
   }
   .nav-menu-prin{
     display: none;
   }
   .nav-menu-prin{
-    background:var(--cor-0);
-    border: 5px solid var(--cor-p1);
-    right: -100%;
-    width: 100%;
-    max-width: 250px;
-    position: fixed;
-    gap: 20px;
-    transition: 0.6s all ease;
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
   }
   .nav-menu-prin li{
     cursor: pointer;
     color: black;
-    border-bottom: 3px solid var(--cor-p1);
+    border-bottom: 3px solid var(--cor-12);
   }
   .nav-menu-prin li:hover{
     transition: 0.3s all ease;
-    color:var(--cor-p1);
+    color:var(--cor-0);
+    transform: scale(1.1);
+    border-bottom: 3px solid var(--cor-0);
 
-  }
-  .nav-menu-prin.ativo{
-    transition:0.6s;
-    position: absolute;
-    right: 0;
+
   }
   .nav-menu-prin li{
     padding:12px;
@@ -52,5 +85,7 @@
   }
   .logo-site{
     max-width: 100%;
+    position: relative;
+    z-index: 400;
   }
 }

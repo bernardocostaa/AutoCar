@@ -1,6 +1,6 @@
 export default function menuMobile(){
   const btnMenu = document.querySelector('.btn-menu')
-  const areaMenu = document.querySelector('.nav-menu-prin')
+  const areaMenu = document.querySelector('.estilo-mobile')
   function ativarMenuMobile(){
     areaMenu.classList.toggle('ativo')
     btnMenu.classList.toggle('ativo')

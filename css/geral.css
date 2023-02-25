@@ -301,8 +301,11 @@ a{
 
 .nav-menu-prin{
   display: flex;
-  gap: 36px;
+  gap: 50px;
   flex-wrap: wrap;
+}
+.nav-menu-prin a:hover{
+color: var(--cor-p1);
 }
 
 .titulo-header-pag{
