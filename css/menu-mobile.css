@@ -13,23 +13,31 @@
   }
   .btn-menu.ativo{
    position: relative;
-
+   transform:  translateX(15px) rotate(-60deg);
   }
   .nav-menu-prin{
     display: none;
   }
   .nav-menu-prin{
-    background:var(--cor-p5);
+    background:var(--cor-0);
+    border: 5px solid var(--cor-p1);
     right: -100%;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    max-width: 250px;
     position: fixed;
-    flex-direction: column;
-    border-radius: 8px 8px 0 0;
     gap: 20px;
     transition: 0.6s all ease;
-    display: flex;
-    align-items: center;
+    display: block;
+  }
+  .nav-menu-prin li{
+    cursor: pointer;
+    color: black;
+    border-bottom: 3px solid var(--cor-p1);
+  }
+  .nav-menu-prin li:hover{
+    transition: 0.3s all ease;
+    color:var(--cor-p1);
+
   }
   .nav-menu-prin.ativo{
     transition:0.6s;
@@ -38,5 +46,11 @@
   }
   .nav-menu-prin li{
     padding:12px;
+  }
+  .header-nav{
+    flex-wrap: nowrap;
+  }
+  .logo-site{
+    max-width: 100%;
   }
 }

@@ -345,6 +345,9 @@ a{
   .conteudo-titulo p{
   font-size: 16px;
   }
+  .titulo-header-pag{
+    height: 30rem;
+  }
 }
 
 @media(min-width:768px){
