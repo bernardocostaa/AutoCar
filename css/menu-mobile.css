@@ -68,17 +68,13 @@
   }
   .nav-menu-prin li{
     cursor: pointer;
-    color: black;
+    color: white;
     font-size: 20px;
-    border-bottom: 3px solid var(--cor-12);
+    border-bottom: 3px solid var(--cor-0);
   }
   .nav-menu-prin li:hover{
     transition: 0.3s all ease;
-    color:var(--cor-0);
     transform: scale(1.1);
-    border-bottom: 3px solid var(--cor-0);
-
-
   }
   .nav-menu-prin li{
     padding:12px;
