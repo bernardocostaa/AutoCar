@@ -116,7 +116,6 @@
   position: absolute;
   height: 6px;
   display: block;
-  left: 0;
   /* left: calc(100% - 25%); */
   background-color: var(--cor-p1);
   border-radius: 8px;
