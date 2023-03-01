@@ -3,13 +3,23 @@ export default function barraPesquisaHome(){
   const progresso = document.querySelector('.progresso')
 
 
-function navegarBarra(e){
-  const itemAtual = e.currentTarget
-  console.log(itemAtual.next);
-  console.log(itemAtual);
+function navegarBarra(index){
+  itemBarra.forEach((item)=>{
+    const bolaAtual = item.querySelector('.bola')
+    bolaAtual.classList.remove('ativo')
+  })
+  const bolaAtiva = document.querySelectorAll('.item-click .bola')
+  bolaAtiva[index].classList.add('ativo')
+  barra(index)
 }
 
-  itemBarra.forEach((item)=>{
-    item.addEventListener('click', navegarBarra)
+function barra(index){
+
+}
+
+  itemBarra.forEach((item,index)=>{
+    item.addEventListener('click', () =>{
+      navegarBarra(index)
+    })
   })
 }
