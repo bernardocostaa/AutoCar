@@ -22,7 +22,6 @@ export default function barraPesquisaHome(){
       progresso.style.left = 0
     }
     let progressoCont = 100 - (25 * index)
-    console.log(progresso.style.left);
     progresso.style.left = `calc(100% - ${progressoCont}%)`
   
   }
