@@ -251,6 +251,23 @@
 .form-footer input{
   width: 100%;
 }
+.form-footer input.ativo{
+  border: 2px solid rgba(255, 0, 0, 0.986);
+}
+.sucesso{
+  background: #0b8f14;
+  padding: 8px;
+  border-radius: 16px;
+}
+.erro{
+  background: rgba(255, 0, 0, 0.986);
+  padding: 8px;
+  border-radius: 16px;
+}
+.aviso-msg p{
+  font-size: 18px;
+  font: 400 18px/1.2 'Roboto', sans-serif;
+}
 .font-footer-nav li{
   margin-bottom: 16px;
 }
