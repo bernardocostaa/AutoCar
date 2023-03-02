@@ -10,8 +10,10 @@ function validarEmail(email){
 function verificaEmail(e){
   e.preventDefault()
   let valorInput = input.value
-  if(validarEmail(valorInput)){
+  const isAValidEmail = validarEmail(valorInput)
+  if(isAValidEmail){
     console.log('correto');
+    input.value = ''
   }else{
     console.log('erro');
   }

@@ -7,7 +7,7 @@ export default function acordionList() {
     function toggleAcordion() {
       const pAcordion = this.closest(".cada-quadro").lastElementChild;
       pAcordion.classList.toggle("ativo");
-      this.classList.toggle('ativo')
+      this.classList.toggle('ativo');
     }
   
     btnAcordion.forEach((item) => {

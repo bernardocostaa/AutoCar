@@ -14,13 +14,11 @@ export default function barraPesquisaHome(){
         bolaAtiva[index].classList.add('ativo')
         pAtivo[index].classList.add('ativo')
         barra(index)
+        console.log(index);
     }
     
     function barra(index){
     const progresso = document.querySelector('.progresso')
-    if(index <= 0){
-      progresso.style.left = 0
-    }
     let progressoCont = 100 - (25 * index)
     progresso.style.left = `calc(100% - ${progressoCont}%)`
   
