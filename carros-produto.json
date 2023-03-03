@@ -1,0 +1,9 @@
+[
+  {
+    "idCar":1,
+    "nomeCar":"Camaro SS",
+    "cv":461,
+    "preco":"520.000.000",
+    "imgHome":"./imgs/img/produto/carro-home-1.jpg"
+  }
+]
