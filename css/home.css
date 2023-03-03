@@ -208,7 +208,8 @@
 }
 .cada-quadro p {
   display: none;
-  animation:acordionAnimacao .5s forwards ;
+  animation:acordionAnimacao .5s forwards;
+  max-width: 600px;
 }
 .cada-quadro p.ativo{
   display: block;
