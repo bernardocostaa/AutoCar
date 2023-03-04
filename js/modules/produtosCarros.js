@@ -2,9 +2,12 @@ export default async function produtosCarros(){
     const sectionCarros = document.querySelectorAll('.coluna-carro')
     const produtoCarro = await fetch('./carros-produto.json')
     const json = await produtoCarro.json();
-    let cardsCarros = ''
+    let coluna = 0
     json.forEach((item)=>{
-        cardsCarros += `
+        if(coluna > sectionCarros.length - 1){
+            coluna = 0
+        }
+        sectionCarros[coluna].innerHTML += `
         <div class="carro">
         <img class="img-carro img-response" src="${item.imgHome}" alt="">
         <div>
@@ -21,11 +24,7 @@ export default async function produtosCarros(){
         </div>
         </div>
         </div>`;
+        coluna++;
     })
-    sectionCarros.forEach((item,i)=>{
-        item.innerHTML = cardsCarros
-        console.log(item);
-    })
-    
 }
 

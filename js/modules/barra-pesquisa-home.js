@@ -14,7 +14,6 @@ export default function barraPesquisaHome(){
         bolaAtiva[index].classList.add('ativo')
         pAtivo[index].classList.add('ativo')
         barra(index)
-        console.log(index);
     }
     
     function barra(index){
