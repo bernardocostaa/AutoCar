@@ -26,5 +26,23 @@ export default async function produtosCarros(){
         </div>`;
         coluna++;
     })
+
+    const btnsCategoria = document.querySelectorAll('.item-click p')
+    function filtrarCarros(e){
+      const btnClicado =  e.currentTarget.innerText;
+      const categoriaJson = json.filter((item)=>{
+        if(btnClicado === item.categoria){
+            // console.log(item);
+            return item
+        }
+        if(btnClicado === 'Todos'){
+            return item
+        }
+      })
+    }
+
+    btnsCategoria.forEach((btn)=>{
+        btn.addEventListener('click',filtrarCarros)
+    })
 }
 
