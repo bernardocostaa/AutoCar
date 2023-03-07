@@ -3,12 +3,17 @@ export default async function produtosCarros(){
     const produtoCarro = await fetch('./carros-produto.json')
     const json = await produtoCarro.json();
     let coluna = 0
+    criarCarros(json)
     function criarCarros(filtro){
-        if(coluna > sectionCarros.length - 1){
-            coluna = 0
+        for (let index = 0; index < sectionCarros.length; index++) {
+            sectionCarros[index].innerHTML = ''
         }
-        let carroHtmlFiltro = filtro.map((item)=>{
-            return`<div class="carro">
+        coluna = 0
+        filtro.forEach((item)=>{
+             if(coluna > sectionCarros.length - 1){
+                 coluna = 0
+             }
+            sectionCarros[coluna].innerHTML += `<div class="carro">
             <img class="img-carro img-response" src="${item.imgHome}" alt="">
             <div>
             <div class="info-carro">
@@ -24,12 +29,9 @@ export default async function produtosCarros(){
             </div>
             </div>
             </div>`;
+            coluna++
         })
-            sectionCarros[coluna].innerHTML = carroHtmlFiltro
-        
-     
     }
-
     function filtrarCarros(e){
         const clique = e.currentTarget.innerText
         const categoriaJson = json.filter((item)=>{
