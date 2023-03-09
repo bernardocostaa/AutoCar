@@ -30,8 +30,9 @@
   width: 400px;
   height: 400px;
   background: linear-gradient(180deg, #35B6FF 0%, #00A2FD 6.25%, #0074B5 100%);
-  border: 6px solid #FFFFFF;
+  border: 16px solid var(--cor-11);
   border-radius: 50%;
+  box-shadow: 0 0 0 8px white;
   display: flex;
   align-items: center;
 }

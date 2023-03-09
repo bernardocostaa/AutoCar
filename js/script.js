@@ -3,6 +3,7 @@ import acordionList from './modules/acordion-list.js';
 import barraPesquisaHome from './modules/barra-pesquisa-home.js'
 import formFooter from './modules/form-footer.js';
 import produtosCarros from './modules/produtosCarros.js';
+import sobreCards from './modules/sobre-cards.js';
 
 
 
@@ -12,3 +13,4 @@ barraPesquisaHome()
 acordionList()
 formFooter()
 produtosCarros()
+sobreCards()
