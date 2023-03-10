@@ -11,6 +11,7 @@ export default async function produtosCarros(){
             }
             coluna = 0
             filtro.forEach((item)=>{
+                console.log(item.home[0]);
                  if(coluna > sectionCarros.length - 1){
                      coluna = 0
                  }

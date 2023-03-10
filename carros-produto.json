@@ -1,74 +1,83 @@
 [
   {
-    "idCar":1,
-    "nomeCar":"Camaro SS - 2022",
-    "cv":461,
-    "preco":"520.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-1.jpg",
-    "categoria":"Elegante"
+    "home": [
+      {
+        "idCar": 1,
+        "nomeCar": "Camaro SS - 2022",
+        "cv": 461,
+        "preco": "520.000.000",
+        "imgHome": "./imgs/img/produto/carro-home-1.jpg",
+        "categoria": "Elegante"
+      }
+    ],
+    "pr":[
+      {
+        "ano":2022
+      }
+    ]
   },
   {
-    "idCar":2,
-    "nomeCar":"Ferrari Spider - 2022",
-    "cv":570,
-    "preco":"999.999.999",
-    "imgHome":"./imgs/img/produto/carro-home-4.jpg",
-    "categoria":"Exclusivos"
+    "idCar": 2,
+    "nomeCar": "Ferrari Spider - 2022",
+    "cv": 570,
+    "preco": "999.999.999",
+    "imgHome": "./imgs/img/produto/carro-home-4.jpg",
+    "categoria": "Exclusivos"
   },
   {
-    "idCar":3,
-    "nomeCar":"Tesla Model 3 - 2022",
-    "cv":329,
-    "preco":"490.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-7.jpg",
-    "categoria":"Performance"
+    "idCar": 3,
+    "nomeCar": "Tesla Model 3 - 2022",
+    "cv": 329,
+    "preco": "490.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-7.jpg",
+    "categoria": "Performance"
   },
   {
-    "idCar":4,
-    "nomeCar":"Audi R8 - 2022",
-    "cv":532,
-    "preco":"750.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-2.jpg",
-    "categoria":"Performance"
+    "idCar": 4,
+    "nomeCar": "Audi R8 - 2022",
+    "cv": 532,
+    "preco": "750.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-2.jpg",
+    "categoria": "Performance"
   },
   {
-    "idCar":5,
-    "nomeCar":"Camaro GM - 2022",
-    "cv":461,
-    "preco":"560.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-5.jpg",
-    "categoria":"Elegante"
+    "idCar": 5,
+    "nomeCar": "Camaro GM - 2022",
+    "cv": 461,
+    "preco": "560.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-5.jpg",
+    "categoria": "Elegante"
   },
   {
-    "idCar":6,
-    "nomeCar":"Porsche 911 - 2022",
-    "cv":385,
-    "preco":"640.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-8.jpg",
-    "categoria":"Elegante"
+    "idCar": 6,
+    "nomeCar": "Porsche 911 - 2022",
+    "cv": 385,
+    "preco": "640.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-8.jpg",
+    "categoria": "Elegante"
   },
   {
-    "idCar":7,
-    "nomeCar":"Tesla Model S - 2022",
-    "cv":429,
-    "preco":"880.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-3.jpg",
-    "categoria":"Performance"
+    "idCar": 7,
+    "nomeCar": "Tesla Model S - 2022",
+    "cv": 429,
+    "preco": "880.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-3.jpg",
+    "categoria": "Performance"
   },
   {
-    "idCar":8,
-    "nomeCar":"Audi TT - 2022",
-    "cv":310,
-    "preco":"190.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-6.jpg",
-    "categoria":"Elegante"
+    "idCar": 8,
+    "nomeCar": "Audi TT - 2022",
+    "cv": 310,
+    "preco": "190.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-6.jpg",
+    "categoria": "Elegante"
   },
   {
-    "idCar":9,
-    "nomeCar":"Porsche 718 - 2022",
-    "cv":439,
-    "preco":"910.000.000",
-    "imgHome":"./imgs/img/produto/carro-home-9.jpg",
-    "categoria":"Exclusivos"
+    "idCar": 9,
+    "nomeCar": "Porsche 718 - 2022",
+    "cv": 439,
+    "preco": "910.000.000",
+    "imgHome": "./imgs/img/produto/carro-home-9.jpg",
+    "categoria": "Exclusivos"
   }
 ]

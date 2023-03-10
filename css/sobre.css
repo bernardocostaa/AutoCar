@@ -36,6 +36,9 @@
   display: flex;
   align-items: center;
 }
+.esfera-cont.ativo{
+  animation: aimaEsfera 1s forwards;
+}
 .flex-item{
   display: flex;
   align-items: center;
@@ -191,5 +194,16 @@
   }
   .flex-item p{
     font-size: 20px;
+  }
+}
+
+@keyframes aimaEsfera{
+  from{
+    opacity: 0;
+    transform: translate3d(0,-30px,0);
+  }
+  do{
+    opacity: 1;
+    transform: translate3d(0,0,0);
   }
 }
