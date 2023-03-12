@@ -4,6 +4,7 @@ import barraPesquisaHome from './modules/barra-pesquisa-home.js'
 import formFooter from './modules/form-footer.js';
 import produtosCarros from './modules/produtosCarros.js';
 import sobreCards from './modules/sobre-cards.js';
+import formContato from './modules/form-contato.js';
 
 
 
@@ -14,3 +15,5 @@ acordionList()
 formFooter()
 produtosCarros()
 sobreCards()
+formContato()
+
