@@ -83,6 +83,10 @@
 .form-para-contato{
   position: relative;
 }
+.erroForm{
+  font: 400 18px/1.2 'Roboto', sans-serif;
+  color: red;
+}
 
 .form-para-contato::before{
   content: '';
