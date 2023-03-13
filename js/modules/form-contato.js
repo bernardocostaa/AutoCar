@@ -41,7 +41,7 @@ export default function formContato() {
         console.log(campos[i].value);
         campos[i].value = "";
         campos[i].style.border ='none'
-        span.remove()
+        span.innerText = ''
       }
     } else {
       span.innerText = 'Erro no formulario, verifique seus dados'
@@ -52,7 +52,7 @@ export default function formContato() {
         campos[4].parentElement.insertBefore(span, campos[4].ElementSibling)
       }
     }
-    function addErro(index) {
+    function addErro(index, msg) {
       campos[index].style.border = "2px solid red";
     }
     function removeErro(index) {
