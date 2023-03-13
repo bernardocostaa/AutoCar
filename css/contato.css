@@ -84,9 +84,40 @@
   position: relative;
 }
 .erroForm{
+  margin-top: 5px;
   font: 400 18px/1.2 'Roboto', sans-serif;
-  color: red;
+  color: #D91D04;
+  position: relative;
+  display: block;
+  margin-left: 12px;
 }
+.erroForm::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: -12px;
+  top: 5px;
+  border-radius: 50%;
+  background: #D91D04;
+}
+
+ .sucessoMsg{
+  position: absolute;
+  bottom: 16px;
+  right: 8px;
+  display: block;
+  background: url(../imgs/icons/certoForm.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.avisoEmail{
+  color: #4ECA64;
+  font: 600 18px/1.2 "Roboto", 'sans-serif';
+  display: flex;
+  align-items: center;
+}
+
 
 .form-para-contato::before{
   content: '';
