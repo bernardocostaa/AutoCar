@@ -192,6 +192,9 @@
   .info-form h3 {
     text-align: center;
   }
+  .erroForm{
+    margin-bottom:12px ;
+  }
 }
 @media(max-width:576px){
   .form-para-contato{
@@ -209,6 +212,14 @@
   }
   .info-form, .form-para-contato{
     padding: 24px;
+  }
+  .sucessoMsg{
+    bottom: 26px;
+    right: 4px;
+  }
+  .avisoEmail{
+    padding: 20px;
+    text-align: center;
   }
 }
 @media(max-width:379px){
