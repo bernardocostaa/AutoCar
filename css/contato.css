@@ -17,7 +17,7 @@
 .form-para-contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 .form-para-contato label{
   font:500 18px/1.2 'Mulish', sans-serif;
@@ -84,10 +84,10 @@
   position: relative;
 }
 .erroForm{
-  margin-top: 5px;
+  margin-top: 6px;
   font: 400 18px/1.2 'Roboto', sans-serif;
   color: #D91D04;
-  position: relative;
+  position: absolute;
   display: block;
   margin-left: 12px;
 }
@@ -194,6 +194,10 @@
   }
   .erroForm{
     margin-bottom:12px ;
+  }
+  .avisoEmail{
+    justify-content: center;
+    padding-bottom: 26px;
   }
 }
 @media(max-width:576px){
