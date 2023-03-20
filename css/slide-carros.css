@@ -1,0 +1,21 @@
+.item-slide{
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.slide-carro-ul{
+  position: relative;
+}
+.slide-carro-ul > *{
+ /* display: none; */
+ position: absolute;
+ opacity: 0;
+ pointer-events: none;
+}
+.slide-carro-ul > .ativo{
+  position: relative;
+  opacity: 1;
+  /* display: block; */
+  pointer-events: initial;
+}
+

@@ -1,6 +1,6 @@
 export default function formContatoNew() {
   const form = document.getElementById("contato");
-
+if(form){
   function verificarInputs(e) {
     const target = e.target;
     console.log(!target.checkValidity());
@@ -59,4 +59,6 @@ export default function formContatoNew() {
     cel.value = cel.value.replace(/(\d)(\d{4})$/, "$1-$2");
   }
  form.cel.addEventListener('keyup',mascaraCell)
+}
+  
 }
