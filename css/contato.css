@@ -225,6 +225,10 @@
     padding: 20px;
     text-align: center;
   }
+  .erroForm{
+    position: inherit;
+    margin-left: 16px;
+  }
 }
 @media(max-width:379px){
   .ajuste-texto{
