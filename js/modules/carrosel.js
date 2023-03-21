@@ -18,9 +18,15 @@ export default function carrosel(){
       item.classList.remove('ativo')
     })
     bolasIndex[ativo].classList.add('ativo')
-    console.log(slide);
   }
 
+  function navBola(bola){
+    bolasIndex.forEach((item)=>{
+      item.classList.remove('ativo')
+    })
+    bola.classList.add('ativo')
+    
+  }
 
   function next(){
     if(ativo < slide.length - 1){
@@ -37,7 +43,12 @@ export default function carrosel(){
     }
   }
 
-
+  bolasIndex.forEach((item,index)=>{
+    item.addEventListener('click',(e)=>{
+      navBola(e.target)
+      ativarSlide(index)
+    })
+  })
   nextBnt.addEventListener('click',next)
   prevBtn.addEventListener('click',prev)
 
