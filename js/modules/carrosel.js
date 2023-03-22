@@ -1,56 +1,125 @@
-export default function carrosel(){
-  const slideDiv = document.querySelector('.item-slide')
-  const indexSlide = document.querySelector('.index-slide')
-  const nextBnt = document.querySelector('.btn-next')
-  const prevBtn = document.querySelector('.btn-prev')
-  const slide = slideDiv.querySelectorAll('.slide-carro-ul > *')
-  const bolasIndex = indexSlide.querySelectorAll('.bola')
-  let ativo = 0
-  ativarSlide(0)
+export default function carrosel() {
+  const carrosel = document.querySelectorAll(".carro-slide");
 
-  function ativarSlide(index){
-    ativo = index
-    slide.forEach((item)=>{
-      item.classList.remove('ativo')
-    })
-    slide[ativo].classList.add('ativo')
-    bolasIndex.forEach((item)=>{
-      item.classList.remove('ativo')
-    })
-    bolasIndex[ativo].classList.add('ativo')
+  let carousels = {
+    0: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+
+    1: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    2: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    3: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    4: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    5: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    6: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    7: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+    8: {
+      currentSlideIndex: 0,
+      lastSlideIndex: 0,
+    },
+  };
+
+  function ativarSlide(slides, currentSlideIndex) {
+    slides.forEach((slide) => slide.classList.remove("ativo"));
+    slides[currentSlideIndex].classList.add("ativo");
   }
 
-  function navBola(bola){
-    bolasIndex.forEach((item)=>{
-      item.classList.remove('ativo')
-    })
-    bola.classList.add('ativo')
-    
+  function ativarBola(currentCarroselIndex, currentSlideIndex) {
+    const carrosel =
+      document.querySelectorAll(".carro-slide")[currentCarroselIndex];
+    const bolasIndex = carrosel.querySelectorAll(".bola");
+
+    bolasIndex.forEach((slide) => slide.classList.remove("ativo"));
+    bolasIndex[currentSlideIndex].classList.add("ativo");
+
+    carousels[currentCarroselIndex].currentSlideIndex = currentSlideIndex;
   }
 
-  function next(){
-    if(ativo < slide.length - 1){
-      ativarSlide(ativo+1)
-    }else{
-      ativarSlide(0)
+  function next(slides, currentCarroselIndex) {
+    if (
+      carousels[currentCarroselIndex].currentSlideIndex ===
+      carousels[currentCarroselIndex].lastSlideIndex
+    ) {
+      carousels[currentCarroselIndex].currentSlideIndex = 0;
+      carousels[currentCarroselIndex].currentBolaIndex = 0;
+    } else {
+      carousels[currentCarroselIndex].currentSlideIndex++;
+      carousels[currentCarroselIndex].currentBolaIndex++;
     }
+
+    ativarSlide(slides, carousels[currentCarroselIndex].currentSlideIndex);
+    ativarBola(
+      currentCarroselIndex,
+      carousels[currentCarroselIndex].currentSlideIndex
+    );
   }
-  function prev(){
-    if(ativo > 0){
-      ativarSlide(ativo - 1)
-    }else{
-      ativarSlide(slide.length - 1)
+
+  function prev(slides, currentCarroselIndex) {
+    if (carousels[currentCarroselIndex].currentSlideIndex === 0) {
+      carousels[currentCarroselIndex].currentSlideIndex =
+        carousels[currentCarroselIndex].lastSlideIndex;
+    } else {
+      carousels[currentCarroselIndex].currentSlideIndex =
+        carousels[currentCarroselIndex].currentSlideIndex - 1;
     }
+
+    ativarSlide(slides, carousels[currentCarroselIndex].currentSlideIndex);
+    ativarBola(
+      currentCarroselIndex,
+      carousels[currentCarroselIndex].currentSlideIndex
+    );
   }
 
-  bolasIndex.forEach((item,index)=>{
-    item.addEventListener('click',(e)=>{
-      navBola(e.target)
-      ativarSlide(index)
-    })
-  })
-  nextBnt.addEventListener('click',next)
-  prevBtn.addEventListener('click',prev)
+  function initSlide(carrosel, currentCarroselIndex) {
+    const slides = carrosel.querySelectorAll(".produto-carro");
+    const nextBnt = carrosel.querySelector(".btn-next");
+    const prevBtn = carrosel.querySelector(".btn-prev");
+    const bolinhasSlide = carrosel.querySelectorAll(".bola");
 
+    carousels[currentCarroselIndex].lastSlideIndex = slides.length - 1;
+    carousels[currentCarroselIndex].currentSlideIndex = 0;
 
+    nextBnt.addEventListener("click", () => {
+      next(slides, currentCarroselIndex);
+    });
+    prevBtn.addEventListener("click", () => {
+      prev(slides, currentCarroselIndex);
+    });
+
+    bolinhasSlide.forEach((bolinhaSlide, index) => {
+      bolinhaSlide.addEventListener("click", () => {
+        ativarSlide(slides, index);
+        ativarBola(currentCarroselIndex, index);
+      });
+    });
+  }
+
+  const initSlides = () => {
+    const carouselsElements = document.querySelectorAll(".carro-slide");
+    carouselsElements.forEach((_, index) => initSlide(carrosel[index], index));
+  };
+
+  initSlides();
 }

@@ -10,9 +10,9 @@
         "categoria": "Elegante"
       }
     ],
-    "pr": [
+    "carros": [
       {
-        "ano": 2022
+        "galeria":[".imgs/img/produto/carro-1-carros.jpg","./imgs/img/produto/carro-home-1.jpg","./imgs/img/produto/carro1-slide-3.jpg","./imgs/img/produto/carro1-slide-4.jpg"]
       }
     ]
   },

@@ -5,8 +5,8 @@ import formFooter from './modules/form-footer.js';
 import produtosCarros from './modules/produtosCarros.js';
 import sobreCards from './modules/sobre-cards.js';
 import formContatoNew from './modules/newFormContato.js';
-import formContato from './modules/form-contato.js';
 import carrosel from './modules/carrosel.js';
+import formContato from './modules/form-contato.js';
 
 
 
