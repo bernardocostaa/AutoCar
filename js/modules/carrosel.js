@@ -58,22 +58,14 @@ export default function carrosel() {
   }
 
   function next(slides, currentCarroselIndex) {
-    if (
-      carousels[currentCarroselIndex].currentSlideIndex ===
-      carousels[currentCarroselIndex].lastSlideIndex
-    ) {
+    if (carousels[currentCarroselIndex].currentSlideIndex ===carousels[currentCarroselIndex].lastSlideIndex) {
       carousels[currentCarroselIndex].currentSlideIndex = 0;
-      carousels[currentCarroselIndex].currentBolaIndex = 0;
     } else {
       carousels[currentCarroselIndex].currentSlideIndex++;
-      carousels[currentCarroselIndex].currentBolaIndex++;
     }
 
     ativarSlide(slides, carousels[currentCarroselIndex].currentSlideIndex);
-    ativarBola(
-      currentCarroselIndex,
-      carousels[currentCarroselIndex].currentSlideIndex
-    );
+    ativarBola(currentCarroselIndex,carousels[currentCarroselIndex].currentSlideIndex);
   }
 
   function prev(slides, currentCarroselIndex) {
@@ -122,4 +114,5 @@ export default function carrosel() {
   };
 
   initSlides();
+
 }
