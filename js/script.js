@@ -6,6 +6,7 @@ import produtosCarros from './modules/produtosCarros.js';
 import sobreCards from './modules/sobre-cards.js';
 import formContatoNew from './modules/newFormContato.js';
 import carrosel from './modules/carrosel.js';
+import carrosTexto from './modules/carrosTexto.js';
 import formContato from './modules/form-contato.js';
 
 
@@ -19,5 +20,6 @@ produtosCarros()
 sobreCards()
 formContatoNew()
 carrosel()
+carrosTexto()
 // formContato()
 

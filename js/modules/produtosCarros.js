@@ -53,6 +53,15 @@ export default async function produtosCarros(){
             })
         }
     }
+
+    function pegarTexto(e){
+      const textoCar = e.target.previousElementSibling.innerText
+      window.localStorage.setItem('carroName', textoCar)
+    }
+    const btns = document.querySelectorAll('.btn-primary-carro')
+    btns.forEach((btnTexto)=>{
+        btnTexto.addEventListener('click',pegarTexto)
+    })
    
 }
 
