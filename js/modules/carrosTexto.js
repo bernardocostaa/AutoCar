@@ -32,6 +32,9 @@ export default async function carrosTexto() {
   const torqueCar = document.querySelector("[data-torque]")
   const tanqueCar = document.querySelector("[data-tanque]")
 
+  const imgsCar = document.querySelectorAll('.js-img')
+
+
   if(!bgCar || !nomeCar || !anoCar){
     return
   }
@@ -54,5 +57,10 @@ export default async function carrosTexto() {
   kmHCar.innerText = produto.kmH
   torqueCar.innerText = produto.torque
   tanqueCar.innerText = produto.tanqueL
+
+  imgsCar.forEach((img,index)=>{
+    img.setAttribute('src', produto.imgs[index])
+  })
+
   
 }

@@ -26,7 +26,8 @@
         "valorCarro":"R$ 520.000.000",
         "kmH":"290",
         "torque":"69.2",
-        "tanqueL":"72"
+        "tanqueL":"72",
+        "imgs":["./imgs/img/produto/mais-camaro-1.jpg","./imgs/img/produto/mais-camaro-2.jpg","./imgs/img/produto/mais-camaro-3.jpg"]
       }
   },
   {
