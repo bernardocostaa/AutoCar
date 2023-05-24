@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="configHeader produtoHeader">
+  <header data-bgCar class="configHeader">
     <div class="header-nav container">
       <div class="mobile-layout">
         <a href="index.html"><img class="logo-site" src="imgs/svg/AutoCar-logo.svg" alt="Logo da empresa"></a>
@@ -41,15 +41,15 @@
     <div class="container">
       <div class="titulo-header-pag-produto">
         <div class="card-info-carro cor-0">
-          <h3 class="font-semibold cor-3 alinharText mb-16">Camaro SS</h3>
+          <h3 data-nomeCar class="font-semibold cor-3 alinharText mb-16"></h3>
           <div class="info-carro-desc">
             <div class="font-p-roboto-16 bold">
-              <p class="ajuste-card-carro">Ano: <span class="cor-4">2022</span></p>
-              <p>Combustível: <span class="cor-4">Flex</span></p>
+              <p class="ajuste-card-carro">Ano: <span data-anoCar class="cor-4"></span></p>
+              <p>Combustível: <span data-combustivelCar class="cor-4"></span></p>
             </div>
             <div class="font-p-roboto-16 bold">
-              <p class="ajuste-card-carro">Câmbio: <span class="cor-4">Manual</span></p>
-              <p>Estoque: <span class="cor-4">5</span></p>
+              <p class="ajuste-card-carro">Câmbio: <span data-cambioCar class="cor-4"></span></p>
+              <p>Estoque: <span data-estoqueCar class="cor-4"></span></p>
             </div>
           </div>
         </div>
@@ -58,21 +58,21 @@
             <p class="titulo-progresso-bar">Velocidade Max</p>
             <div class="progresso-bar-card">
               <div class="progresso-bar"></div>
-              <span class="font-24-bold">320</span>
+              <span data-velocidadeMaxCar class="font-24-bold"></span>
             </div>
           </div>
           <div class="font-p-roboto-16 bold">
             <p class="titulo-progresso-bar">Cavalos</p>
             <div class="progresso-bar-card">
               <div class="progresso-bar"></div>
-              <span class="font-24-bold">450</span>
+              <span data-cavalosCar class="font-24-bold"></span>
             </div>
           </div>
           <div class="font-p-roboto-16 bold">
             <p class="titulo-progresso-bar">0 Km/h - 100 km/h</p>
             <div class="progresso-bar-card">
               <div class="progresso-bar"></div>
-              <span class="font-24-bold">4.5</span>
+              <span data-de0a100Car class="font-24-bold"></span>
             </div>
           </div>
         </div>
@@ -87,37 +87,37 @@
     </section>
     <section class="bg-dark pd-tb-60">
       <div class="container">
-        <h2 class="alinharText cor-0 font-h2 mb-40">Camaro SS</h2>
+        <h2 data-nomeDestaqueCar class="alinharText cor-0 font-h2 mb-40"></h2>
         <div class="grid-produto">
           <div class="alinharText w-60">
             <div class="info-carro-venda">
               <div class="info-carro-venda-conteudo">
                 <p class="font-subTitle cor-4 mb-8">Km/Litro</p>
-                <p class="cor-1 font-semi-32 mb-8">4.2</p>
+                <p data-kmLitroCar class="cor-1 font-semi-32 mb-8"></p>
               </div>
             </div>
             <div class="info-carro-venda mt-16">
               <div class="info-carro-venda-conteudo ">
                 <p class="font-subTitle cor-4 mb-8">Motor</p>
-                <p class="cor-1 font-semi-32 mb-8">V8</p>
+                <p data-motorCar class="cor-1 font-semi-32 mb-8"></p>
               </div>
             </div>
             <div class="info-carro-venda mt-16">
               <div class="info-carro-venda-conteudo">
                 <p class="font-subTitle cor-4 mb-8">Cavalos</p>
-                <p class="cor-1 font-semi-32 mb-8">450</p>
+                <p data-cavalosDestaqueCar class="cor-1 font-semi-32 mb-8"></p>
               </div>
             </div>
           </div>
           <div class="carro-info-img">
             <div class="preco-carro mb-60">
-              <span class="font-h2 preco-flutuante cor-0">R$ 520.000.000</span>
+              <span data-valorCar class="font-h2 preco-flutuante cor-0"></span>
               <img class="carrro-produto-img" src="./imgs/img/carrro-produto/camaro-produto.png" alt="">
             </div>
             <div class="cor-0 font-subTitle vantagem">
               <div class="vantagem-item">
                 <img src="imgs/svg/tempo.svg" alt="">
-                <p>0 a 100 em 4,2 s</p>
+                <p>0 a 100 em <span data-destaqueDe0a100Car>4,2</span> s</p>
               </div>
               <div class="vantagem-item">
                 <img src="imgs/svg/tecnologia.svg" alt="">
@@ -133,19 +133,19 @@
             <div class="info-carro-venda">
               <div class="info-carro-venda-conteudo">
                 <p class="font-subTitle cor-4 mb-8">Km/h</p>
-                <p class="cor-1 font-semi-32 mb-8">290</p>
+                <p data-kmH class="cor-1 font-semi-32 mb-8"></p>
               </div>
             </div>
             <div class="info-carro-venda mt-16">
               <div class="info-carro-venda-conteudo">
                 <p class="font-subTitle cor-4 mb-8">Torque</p>
-                <p class="cor-1 font-semi-32 mb-8">69.2</p>
+                <p data-torque class="cor-1 font-semi-32 mb-8"></p>
               </div>
             </div>
             <div class="info-carro-venda mt-16">
               <div class="info-carro-venda-conteudo">
                 <p class="font-subTitle cor-4 mb-8">Tanque/L</p>
-                <p class="cor-1 font-semi-32 mb-8">72</p>
+                <p data-tanque class="cor-1 font-semi-32 mb-8"></p>
               </div>
             </div>
           </div>

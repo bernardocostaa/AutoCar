@@ -10,11 +10,24 @@
         "categoria": "Elegante"
       }
     ],
-    "carros": [
+    "produto": 
       {
-        "galeria":[".imgs/img/produto/carro-1-carros.jpg","./imgs/img/produto/carro-home-1.jpg","./imgs/img/produto/carro1-slide-3.jpg","./imgs/img/produto/carro1-slide-4.jpg"]
+        "bgHeaderCarro":"./imgs/img/backgrounds/bgcamaro.jpg",
+        "carroName":"Camaro SS",
+        "ano":"2022",
+        "cambio":"Manual",
+        "combustivel":"Flex",
+        "estoque":"5",
+        "velocidadeMax":"320",
+        "cavalos":"450",
+        "de0a100km":"4.5",
+        "kmLitro":"4.2",
+        "motor":"V8",
+        "valorCarro":"R$ 520.000.000",
+        "kmH":"290",
+        "torque":"69.2",
+        "tanqueL":"72"
       }
-    ]
   },
   {
     "home": [
@@ -26,7 +39,18 @@
         "imgHome": "./imgs/img/produto/carro-home-4.jpg",
         "categoria": "Exclusivos"
       }
-    ]
+    ],
+    "produto":{
+        "bgHeaderCarro":"./imgs/img/backgrounds/bgcarros.jpg",
+        "carroName":"Ferrari Spider",
+        "ano":"2022",
+        "cambio":"Manual",
+        "combustivel":"Flex",
+        "estoque":"5",
+        "VelocidadeMax":"320",
+        "cavalos":"450",
+        "de0a100km":"4.5"
+      }
   },
   {
     "home": [

@@ -1,7 +1,6 @@
-.produtoHeader {
-  background: url("../imgs/img/backgrounds/bgcamaro.jpg") no-repeat center
-    center/cover;
-}
+/* .produtoHeader {
+  background: url("../imgs/img/backgrounds/bgcamaro.jpg") no-repeat center center/cover;
+} */
 
 .titulo-header-pag-produto{
   display: flex;
