@@ -31,6 +31,7 @@ export default async function carrosTexto() {
   const kmHCar = document.querySelector("[data-kmH]")
   const torqueCar = document.querySelector("[data-torque]")
   const tanqueCar = document.querySelector("[data-tanque]")
+  const carroDestaque = document.querySelector("[data-carroDestaque]")
 
   const imgsCar = document.querySelectorAll('.js-img')
 
@@ -57,6 +58,7 @@ export default async function carrosTexto() {
   kmHCar.innerText = produto.kmH
   torqueCar.innerText = produto.torque
   tanqueCar.innerText = produto.tanqueL
+  carroDestaque.setAttribute('src',produto.destaqueCarro)
 
   imgsCar.forEach((img,index)=>{
     img.setAttribute('src', produto.imgs[index])

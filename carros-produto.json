@@ -27,6 +27,7 @@
         "kmH":"290",
         "torque":"69.2",
         "tanqueL":"72",
+        "destaqueCarro":"./imgs/img/carrro-produto/camaro-produto.png",
         "imgs":["./imgs/img/produto/mais-camaro-1.jpg","./imgs/img/produto/mais-camaro-2.jpg","./imgs/img/produto/mais-camaro-3.jpg"]
       }
   },
@@ -42,15 +43,23 @@
       }
     ],
     "produto":{
-        "bgHeaderCarro":"./imgs/img/backgrounds/bgcarros.jpg",
+        "bgHeaderCarro":"./imgs/img/backgrounds/bgferrarispider.jpg",
         "carroName":"Ferrari Spider",
-        "ano":"2022",
+        "ano":"2021",
         "cambio":"Manual",
         "combustivel":"Flex",
-        "estoque":"5",
-        "VelocidadeMax":"320",
-        "cavalos":"450",
-        "de0a100km":"4.5"
+        "estoque":"3",
+        "velocidadeMax":"500",
+        "cavalos":"570",
+        "de0a100km":"3.0",
+        "kmLitro":"6.2",
+        "motor":"V9",
+        "valorCarro":"R$ 999.999.999",
+        "kmH":"300",
+        "torque":"90.2",
+        "tanqueL":"82",
+        "destaqueCarro":"./imgs/img/carrro-produto/ferrarispider-produto.png",
+        "imgs":["./imgs/img/produto/mais-ferrarispider-1.jpg","./imgs/img/produto/mais-ferrarispider-2.jpg","./imgs/img/produto/mais-ferrarispider-3.jpg"]
       }
   },
   {
