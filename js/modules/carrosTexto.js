@@ -40,6 +40,8 @@ export default async function carrosTexto() {
     return
   }
 
+document.title = `AutoCar - ${produto.carroName}`
+
   bgCar.style.background = `url(${produto.bgHeaderCarro}) no-repeat center center/cover`;
   nomeCar.innerText = produto.carroName;
   anoCar.innerText = produto.ano;

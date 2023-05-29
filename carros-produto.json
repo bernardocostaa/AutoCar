@@ -72,7 +72,26 @@
         "imgHome": "./imgs/img/produto/carro-home-7.jpg",
         "categoria": "Performance"
       }
-    ]
+    ],
+    "produto":{
+      "bgHeaderCarro":"./imgs/img/backgrounds/bgteslamodel3.jpg",
+      "carroName":"Tesla Model 3",
+      "ano":"2023",
+      "cambio":"Automático",
+      "combustivel":"Elétrico",
+      "estoque":"1",
+      "velocidadeMax":"400",
+      "cavalos":"350",
+      "de0a100km":"4.0",
+      "kmLitro":"4.2",
+      "motor":"indução (IM)",
+      "valorCarro":"R$ 490.000.000",
+      "kmH":"300",
+      "torque":"20.8",
+      "tanqueL":"82",
+      "destaqueCarro":"./imgs/img/carrro-produto/teslamodel3.png",
+      "imgs":["./imgs/img/produto/mais-teslamodel3-1.jpg","./imgs/img/produto/mais-teslamodel3-2.jpg","./imgs/img/produto/mais-teslamodel3-3.jpg"]
+    }
   },
   {
     "home": [
