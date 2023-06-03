@@ -34,6 +34,8 @@ export default async function carrosTexto() {
   const carroDestaque = document.querySelector("[data-carroDestaque]")
 
   const imgsCar = document.querySelectorAll('.js-img')
+  const videoCarro = document.querySelector('.videoCarro')
+
 
 
   if(!bgCar || !nomeCar || !anoCar){
@@ -61,10 +63,12 @@ document.title = `AutoCar - ${produto.carroName}`
   torqueCar.innerText = produto.torque
   tanqueCar.innerText = produto.tanqueL
   carroDestaque.setAttribute('src',produto.destaqueCarro)
+  videoCarro.setAttribute('src',produto.video)
 
   imgsCar.forEach((img,index)=>{
     img.setAttribute('src', produto.imgs[index])
   })
-
   
+
+
 }

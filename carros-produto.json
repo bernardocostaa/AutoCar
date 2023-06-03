@@ -28,7 +28,8 @@
         "torque":"69.2",
         "tanqueL":"72",
         "destaqueCarro":"./imgs/img/carrro-produto/camaro-produto.png",
-        "imgs":["./imgs/img/produto/mais-camaro-1.jpg","./imgs/img/produto/mais-camaro-2.jpg","./imgs/img/produto/mais-camaro-3.jpg"]
+        "imgs":["./imgs/img/produto/mais-camaro-1.jpg","./imgs/img/produto/mais-camaro-2.jpg","./imgs/img/produto/mais-camaro-3.jpg"],
+        "video":"https://www.youtube.com/embed/TQ5kqy_o-NI?controls=0&autoplay=1&mute=1&loop=1&playlist=TQ5kqy_o-NI"
       }
   },
   {
@@ -59,7 +60,8 @@
         "torque":"90.2",
         "tanqueL":"82",
         "destaqueCarro":"./imgs/img/carrro-produto/ferrarispider-produto.png",
-        "imgs":["./imgs/img/produto/mais-ferrarispider-1.jpg","./imgs/img/produto/mais-ferrarispider-2.jpg","./imgs/img/produto/mais-ferrarispider-3.jpg"]
+        "imgs":["./imgs/img/produto/mais-ferrarispider-1.jpg","./imgs/img/produto/mais-ferrarispider-2.jpg","./imgs/img/produto/mais-ferrarispider-3.jpg"],
+        "video":"https://www.youtube.com/embed/7HQ7-jnJ0J4?controls=0&autoplay=1&mute=1&loop=1&playlist=7HQ7-jnJ0J4" 
       }
   },
   {
@@ -90,7 +92,8 @@
       "torque":"20.8",
       "tanqueL":"82",
       "destaqueCarro":"./imgs/img/carrro-produto/teslamodel3.png",
-      "imgs":["./imgs/img/produto/mais-teslamodel3-1.jpg","./imgs/img/produto/mais-teslamodel3-2.jpg","./imgs/img/produto/mais-teslamodel3-3.jpg"]
+      "imgs":["./imgs/img/produto/mais-teslamodel3-1.jpg","./imgs/img/produto/mais-teslamodel3-2.jpg","./imgs/img/produto/mais-teslamodel3-3.jpg"],
+      "video":"https://www.youtube.com/embed/rQIKgMHbovY?controls=0&autoplay=1&mute=1&loop=1&playlist=rQIKgMHbovY"
     }
   },
   {
