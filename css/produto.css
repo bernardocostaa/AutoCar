@@ -142,6 +142,10 @@ iframe {
   transform: translateY(50%);
 }
 
+.heightNew{
+  height: 750px;
+}
+
 
 @media(max-width:1050px){
  

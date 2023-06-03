@@ -106,7 +106,27 @@
         "imgHome": "./imgs/img/produto/carro-home-2.jpg",
         "categoria": "Performance"
       }
-    ]
+    ],
+    "produto":{
+      "bgHeaderCarro":"./imgs/img/backgrounds/bgteslamodel3.jpg",
+      "carroName":"Audi R8",
+      "ano":"2022",
+      "cambio":"Manual",
+      "combustivel":"Flex",
+      "estoque":"6",
+      "velocidadeMax":"340",
+      "cavalos":"520",
+      "de0a100km":"3.5",
+      "kmLitro":"5.2",
+      "motor":"V10",
+      "valorCarro":"R$ 750.000.000",
+      "kmH":"290",
+      "torque":"50.8",
+      "tanqueL":"60",
+      "destaqueCarro":"./imgs/img/carrro-produto/teslamodel3.png",
+      "imgs":["./imgs/img/produto/mais-teslamodel3-1.jpg","./imgs/img/produto/mais-teslamodel3-2.jpg","./imgs/img/produto/mais-teslamodel3-3.jpg"],
+      "video":"https://www.youtube.com/embed/rQIKgMHbovY?controls=0&autoplay=1&mute=1&loop=1&playlist=rQIKgMHbovY"
+    }
   },
   {
     "home": [
